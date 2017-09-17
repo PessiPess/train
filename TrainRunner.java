@@ -25,7 +25,7 @@ public class TrainRunner {
 
 
     public static void main(String[] args) {
-        ListOfWagons listOfWagons = new ListOfWagons(3);
+        ListOfWagons listOfWagons = new ListOfWagons(50);
         Train train = listOfWagons;
 
         System.out.println(train.isLength(findLength(train)));
