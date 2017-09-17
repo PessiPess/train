@@ -44,7 +44,7 @@ public class ListOfWagons implements Train{
 
     public void output(){
 
-        for (int i = 0; i <wagons.size() +10; i++) {
+        for (int i = 0; i <wagons.size(); i++) {
             System.out.println(wagons.get(currentPosition).isLightOn()+"  "+currentPosition);
             turnRight();
         }

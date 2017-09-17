@@ -26,9 +26,12 @@ public class TrainRunner {
 
     public static void main(String[] args) {
         ListOfWagons listOfWagons = new ListOfWagons(50);
+        System.out.println("Hell train : ");
+        listOfWagons.output();
+
         Train train = listOfWagons;
 
-        System.out.println(train.isLength(findLength(train)));
+        System.out.println("Is your answer correct : "+train.isLength(findLength(train)));
 
 
     }
