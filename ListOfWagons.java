@@ -9,6 +9,8 @@ public class ListOfWagons implements Train{
     private int currentPosition;
 
     public ListOfWagons(int sizeOfList){
+        if (sizeOfList<3)
+            throw new IllegalArgumentException("Size of train must be >3, but actually is "+sizeOfList);
         Random random = new Random(46);
         for (int i = 0; i < sizeOfList; i++) {
             wagons.add(new Wagon(random.nextBoolean()));
@@ -16,7 +18,7 @@ public class ListOfWagons implements Train{
     }
 
     public ListOfWagons(){
-            this(1 + new Random(10).nextInt());
+            this(3 + new Random(10).nextInt());
         }
 
     public void turnLeft(){
